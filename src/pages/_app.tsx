@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/core"
-import theme from "@/src/design-system"
-import siteConfig from "@/src/configs/site-config"
+import theme from "@/design-system"
+import siteConfig from "@/configs/site-config"
 import { AppProps } from "next/app"
 import { DefaultSeo } from "next-seo"
 
