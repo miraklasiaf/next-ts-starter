@@ -21,7 +21,7 @@ const Moon = (props) => (
   </chakra.svg>
 )
 
-export default function ThemeToggle() {
+export default function ThemeSwitcher() {
   const { toggleColorMode: toggleMode } = useColorMode()
   const text = useColorModeValue("dark", "light")
   const SwitchIcon = useColorModeValue(
