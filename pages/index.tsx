@@ -1,5 +1,5 @@
-import { Flex, Box, Heading, Link, Text } from "@chakra-ui/core"
-import ThemeToggle from "@/components/theme-toggle"
+import { Flex, Box, Heading, Link, Text } from "@chakra-ui/react"
+import { ThemeSwitcher } from "@/components/ui"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       </Text>
 
       <Box mt={6}>
-        <ThemeToggle />
+        <ThemeSwitcher />
       </Box>
     </Flex>
   )

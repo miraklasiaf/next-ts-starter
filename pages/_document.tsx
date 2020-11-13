@@ -6,7 +6,7 @@ import NextDocument, {
   DocumentContext,
 } from "next/document"
 import GoogleFonts from "next-google-fonts"
-import { ColorModeScript } from "@chakra-ui/core"
+import { ColorModeScript } from "@chakra-ui/react"
 
 class Document extends NextDocument {
   static async getInitialProps(ctx: DocumentContext) {

@@ -10,17 +10,26 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "format": "prettier --write \"./**/*.{ts,tsx}\"",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "type-check": "tsc --noEmit",
+    "validate": "yarn lint && yarn type-check"
   },
   "dependencies": {
-    "@chakra-ui/core": "^0.8.0",
+    "@chakra-ui/react": "^1.0.0",
     "@chakra-ui/theme": "^1.0.0",
     "@chakra-ui/theme-tools": "^1.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^2.9.4",
+    "lodash.debounce": "^4.0.8",
     "next": "^10.0.1",
     "next-google-fonts": "^1.2.1",
     "next-seo": "^4.7.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "nprogress": "^0.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",

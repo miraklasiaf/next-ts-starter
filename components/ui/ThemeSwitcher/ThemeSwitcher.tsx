@@ -3,7 +3,7 @@ import {
   useColorMode,
   useColorModeValue,
   chakra,
-} from "@chakra-ui/core"
+} from "@chakra-ui/react"
 
 const Sun = (props) => (
   <chakra.svg fill="currentColor" viewBox="0 0 20 20" {...props}>
@@ -21,7 +21,7 @@ const Moon = (props) => (
   </chakra.svg>
 )
 
-export default function ThemeToggle() {
+export default function ThemeSwitcher() {
   const { toggleColorMode: toggleMode } = useColorMode()
   const text = useColorModeValue("dark", "light")
   const SwitchIcon = useColorModeValue(
